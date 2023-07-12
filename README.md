@@ -1,6 +1,6 @@
 # Credit card dataset testing on Vertex AI
 ## Steps to replicate issue:
-1.  Run to package the source distribution file for training job: <br />```python setup.py sdist --formats=gztar``` 
+1.  Run command in terminal to package the source distribution file for training job: <br />```python setup.py sdist --formats=gztar``` 
 2.  Change directory to dist folder and run command to copy dist file to GCS bucket: <br />```gsutil cp trainer-0.1.tar.gz gs://preprocessed_credit_card_data```
 3.  Run all cells in trainerJob.ipynb to start training job, to which error would then be replicated (link to logs explorer will be at the bottom of the cell when cell finishes running or when error is displayed in notebook)
 
